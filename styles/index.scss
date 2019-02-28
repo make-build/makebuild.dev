@@ -20,41 +20,58 @@ nav {
     }
 }
 
-.logo {
+img {
     min-width: 256px;
 }
 
 .content {
     h1,
-    h2 {
+    h2,
+    h3 {
         font-family: $family-monospace;
     }
 
     h4 {
         margin-bottom: 0.5rem;
     }
+
+    // &.column {
+    //     padding: 2rem;
+    // }
 }
 
 .section {
-    padding: 6rem 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 #hero {
     position: relative;
     h1 {
-        font-size: $size-1 * 1.5;
-        // font-family: 'Roboto', $family-primary;
+        font-size: $size-3;
         font-family: $family-monospace;
         font-weight: $weight-bold;
-        // color: $primary;
         margin-top: 1rem;
+        margin-bottom: 0.25rem;
         text-transform: uppercase;
+
+        @include tablet {
+            font-size: $size-1;
+        }
     }
     h2 {
         // font-family: $family-monospace;
-        font-size: $size-4;
+        font-size: $size-5;
         font-weight: $weight-bold;
         color: $greydark;
+
+        @include tablet {
+            font-size: $size-4;
+        }
+    }
+    h3 {
+        margin-top: 0rem;
+        margin-bottom: 2rem;
     }
     .logo {
         width: 20%;
@@ -67,7 +84,7 @@ nav {
             @extend .is-primary, .is-medium;
             border-radius: 2px;
             padding: 1.25rem;
-            margin: 0 1rem;
+            margin: 0 1rem 1rem;
             font-size: 1rem;
         }
     }
@@ -84,32 +101,44 @@ nav {
     }
 }
 
-#details {
-    .columns {
-        flex-direction: row-reverse;
-    }
-}
-
 #statement {
     background-color: $black;
-    padding: 8rem 4rem;
 
     .box {
         border-radius: 0;
         background-color: $body-background-color;
-        padding: 2rem;
 
         h1 {
             font-weight: $weight-normal;
         }
     }
+
+    @include tablet {
+        padding: 8rem 4rem;
+        .box {
+            padding: 2rem;
+        }
+    }
 }
 
 #schedule {
+    // .columns {
+    //     flex-direction: row-reverse;
+    // }
+
+    // .sched-col {
+    //     padding: 2rem;
+    // }
+
     span {
-        font-size: $size-5;
+        // font-size: $size-5;
         b {
             font-family: $family-monospace;
         }
     }
+}
+
+#faq.section {
+    background-color: $earth-blue;
+    // color: $white;
 }
