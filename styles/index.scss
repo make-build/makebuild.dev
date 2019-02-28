@@ -1,0 +1,115 @@
+@import 'base';
+
+h1 {
+    color: pink;
+}
+
+h4 {
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-size: 1rem !important;
+}
+
+nav {
+    padding: 1rem 0 0 0;
+
+    a h4 {
+        color: $greydark;
+        padding: 1rem;
+    }
+}
+
+.logo {
+    min-width: 256px;
+}
+
+.content {
+    h1,
+    h2 {
+        font-family: $family-monospace;
+    }
+
+    h4 {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.section {
+    padding: 6rem 3rem;
+}
+
+#hero {
+    position: relative;
+    h1 {
+        font-size: $size-1 * 1.5;
+        // font-family: 'Roboto', $family-primary;
+        font-family: $family-monospace;
+        font-weight: $weight-bold;
+        // color: $primary;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+    h2 {
+        // font-family: $family-monospace;
+        font-size: $size-4;
+        font-weight: $weight-bold;
+        color: $greydark;
+    }
+    .logo {
+        width: 20%;
+        padding: 2rem;
+    }
+
+    .buttons {
+        margin-top: 1rem;
+        .button {
+            @extend .is-primary, .is-medium;
+            border-radius: 2px;
+            padding: 1.25rem;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+#details,
+#schedule {
+    .img-wrap {
+        position: relative;
+        img {
+            width: 100%;
+            max-width: 256px;
+        }
+    }
+}
+
+#details {
+    .columns {
+        flex-direction: row-reverse;
+    }
+}
+
+#statement {
+    background-color: $black;
+    padding: 8rem 4rem;
+
+    .box {
+        border-radius: 0;
+        background-color: $body-background-color;
+        padding: 2rem;
+
+        h1 {
+            font-weight: $weight-normal;
+        }
+    }
+}
+
+#schedule {
+    span {
+        font-size: $size-5;
+        b {
+            font-family: $family-monospace;
+        }
+    }
+}

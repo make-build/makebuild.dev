@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css');
+
+// Set your brand colors
+
+// Earth
+$earth-blue: #4a8ed8;
+$earth-blue-dark: #3e77b5;
+$earth-clouds: #d1d7de;
+
+// Shooting Star
+$shooting-star-orange: #df6e3b;
+$shooting-star-yellow: #f1be6e;
+
+$greydark: #4b5771;
+$greymid: #afb9c8;
+$greylight: #e6e8ef;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Helvetica Neue', Helvetica, Roboto, sans-serif;
+$family-monospace: 'Fira Code', 'Roboto Mono', monospace;
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+$primary: $earth-blue;
+$link: $earth-blue-dark;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $earth-clouds;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$weight-black: 900;
+
+// Import only what you need from Bulma
+@import '~bulma/sass/utilities/_all.sass';
+@import '~bulma/sass/base/_all.sass';
+@import '~bulma/sass/grid/columns.sass';
+@import '~bulma/sass/elements/box.sass';
+@import '~bulma/sass/elements/button.sass';
+@import '~bulma/sass/elements/container.sass';
+@import '~bulma/sass/elements/content.sass';
+@import '~bulma/sass/components/navbar.sass';
+@import '~bulma/sass/components/level.sass';
+@import '~bulma/sass/layout/hero.sass';
+@import '~bulma/sass/layout/section.sass';
+
+h4 {
+    letter-spacing: 1.1px;
+}
+
+.button {
+    // font-family: $family-monospace;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    // border-radius: 50%;
+    // padding: 1rem;
+}
