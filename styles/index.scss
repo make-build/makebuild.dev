@@ -1,9 +1,5 @@
 @import 'base';
 
-h1 {
-    color: pink;
-}
-
 h4 {
     font-weight: $weight-bold;
     text-transform: uppercase;
@@ -138,7 +134,49 @@ img {
     }
 }
 
+#sponsors.section {
+    .column .box {
+        background-color: $shuttle-white-off;
+        border-radius: 2px;
+        box-shadow: none;
+        border: $black 0.5rem solid;
+        min-height: 4rem;
+        height: 100%;
+    }
+
+    h3 {
+        color: $black;
+        margin: 0;
+    }
+}
+
 #faq.section {
     background-color: $earth-blue;
+    $faq-text-color: $black;
+
+    * {
+        color: $faq-text-color !important;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        // text-decoration: underline;
+        font-weight: 500;
+        border-bottom: $faq-text-color 0.1rem solid;
+        display: inline;
+    }
+
+    p {
+        margin: 1rem 0 2rem;
+        color: $black;
+    }
+
+    a {
+        color: $white;
+    }
     // color: $white;
 }

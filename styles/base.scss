@@ -11,6 +11,15 @@ $earth-blue: #4a8ed8;
 $earth-blue-dark: #3e77b5;
 $earth-clouds: #d1d7de;
 
+// Shuttle
+$booster-orange: #f06528;
+$booster-orange-dark: #de591e;
+$booster-yellow: #f5ae45;
+$booster-yellow-dark: #f09e25;
+$shuttle-white: #cfd7df;
+$shuttle-white-off: #b7bcc4;
+$shuttle-grey: #808b96;
+
 // Shooting Star
 $shooting-star-orange: #df6e3b;
 $shooting-star-yellow: #f1be6e;
@@ -26,11 +35,12 @@ $family-monospace: 'Fira Code', 'Roboto Mono', monospace;
 // $grey-light: $beige-light;
 $primary: $earth-blue;
 $link: $earth-blue-dark;
+$background: $earth-clouds;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $earth-clouds;
+$body-background-color: $background;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
