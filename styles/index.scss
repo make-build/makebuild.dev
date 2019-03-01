@@ -20,6 +20,18 @@ img {
     min-width: 256px;
 }
 
+.brand {
+    font-family: $family-monospace;
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+}
+
+.button {
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .content {
     h1,
     h2,
@@ -30,10 +42,6 @@ img {
     h4 {
         margin-bottom: 0.5rem;
     }
-
-    // &.column {
-    //     padding: 2rem;
-    // }
 }
 
 .section {
@@ -44,19 +52,16 @@ img {
 #hero {
     position: relative;
     h1 {
+        @extend .brand;
         font-size: $size-3;
-        font-family: $family-monospace;
-        font-weight: $weight-bold;
         margin-top: 1rem;
         margin-bottom: 0.25rem;
-        text-transform: uppercase;
 
         @include tablet {
             font-size: $size-1;
         }
     }
     h2 {
-        // font-family: $family-monospace;
         font-size: $size-5;
         font-weight: $weight-bold;
         color: $greydark;
@@ -99,6 +104,8 @@ img {
 
 #statement {
     background-color: $black;
+    background-image: url('../assets/statement-background.svg');
+    background-attachment: fixed;
 
     .box {
         border-radius: 0;
@@ -118,16 +125,7 @@ img {
 }
 
 #schedule {
-    // .columns {
-    //     flex-direction: row-reverse;
-    // }
-
-    // .sched-col {
-    //     padding: 2rem;
-    // }
-
     span {
-        // font-size: $size-5;
         b {
             font-family: $family-monospace;
         }
@@ -135,6 +133,9 @@ img {
 }
 
 #sponsors.section {
+    h1 {
+        margin-bottom: 2rem;
+    }
     .column .box {
         background-color: $shuttle-white-off;
         border-radius: 2px;
@@ -155,7 +156,7 @@ img {
     $faq-text-color: $black;
 
     * {
-        color: $faq-text-color !important;
+        color: $faq-text-color;
     }
 
     h1 {
@@ -164,7 +165,6 @@ img {
 
     h2 {
         text-transform: uppercase;
-        // text-decoration: underline;
         font-weight: 500;
         border-bottom: $faq-text-color 0.1rem solid;
         display: inline;
@@ -173,10 +173,8 @@ img {
     p {
         margin: 1rem 0 2rem;
         color: $black;
+        a {
+            color: $white;
+        }
     }
-
-    a {
-        color: $white;
-    }
-    // color: $white;
 }
