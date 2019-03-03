@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "website",
-  "alias": ["makebuild.dev"],
+  "alias": ["preview.makebuild.dev"],
   "builds": [
     {
       "src": "package.json",
