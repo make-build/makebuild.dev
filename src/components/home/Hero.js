@@ -1,5 +1,6 @@
 import React from 'react';
 import planetEarth from '../../assets/svg/006-planet-earth.svg';
+import links from '../links';
 
 const Hero = () => {
     return (
@@ -19,16 +20,10 @@ const Hero = () => {
                         April 12th 2019
                     </h3>
                     <div className="buttons is-centered">
-                        <a
-                            className="button"
-                            href="https://airtable.com/shrRmzfcOJ2vJcssf"
-                        >
+                        <a className="button" href={links.registration}>
                             Apply
                         </a>
-                        <a
-                            className="button is-outlined"
-                            href="mailto:team@makebuild.dev"
-                        >
+                        <a className="button is-outlined" href={links.mailTeam}>
                             Contact
                         </a>
                     </div>

@@ -5,9 +5,11 @@ import Team from './pages/Team';
 
 const App = () => {
     return (
-        <Router>
-            <Route path="/" exact component={Home} />
-            <Route path="/team" exact component={Team} />
+        <Router onUpdate={() => window.scrollTo(0, 0)}>
+            <div>
+                <Route path="/" exact component={Home} />
+                <Route path="/team" exact component={Team} />
+            </div>
         </Router>
     );
 };

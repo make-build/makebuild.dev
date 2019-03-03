@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from '../components/common/navbar';
-import Footer from '../components/common/footer';
+import NavBar from '../components/common/NavBar';
+import Footer from '../components/common/Footer';
 
 const DefaultLayout = ({ children }) => (
     <div>

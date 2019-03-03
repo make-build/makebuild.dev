@@ -1,4 +1,22 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+import links from '../links';
+
+const HomeLink = () => <NavLink to="/">Home</NavLink>;
+const HomeAnchor = () => <a href="/#">Home</a>;
+
+const Menu = ({ label, children }) => (
+    <aside className="menu has-text-light">
+        <p className="menu-label brand">{label}</p>
+        <ul className="menu-list">
+            {children.map(child => (
+                // eslint-disable-next-line react/jsx-key
+                <li>{child}</li>
+            ))}
+        </ul>
+    </aside>
+);
 
 const Footer = () => {
     return (
@@ -6,37 +24,32 @@ const Footer = () => {
             <div className="container">
                 <div className="columns">
                     <div className="column is-3">
-                        <aside className="menu has-text-light">
-                            <p className="menu-label brand">MAKE/BUILD</p>
-                            <ul className="menu-list">
-                                <li>
-                                    <a href="#home">Home</a>
-                                </li>
-                                <li>
-                                    <a>Team</a>
-                                </li>
-                            </ul>
-                        </aside>
+                        <Menu label="MAKE/BUILD">
+                            <Switch>
+                                <Route exact path="/" component={HomeAnchor} />
+                                <Route component={HomeLink} />
+                            </Switch>
+                            <a href={links.registration}>Apply</a>
+                            <NavLink to="/team">Team</NavLink>
+                        </Menu>
                     </div>
                     <div className="column is-3">
-                        <aside className="menu has-text-light">
-                            <p className="menu-label brand">HackFSU</p>
-                            <ul className="menu-list">
-                                <li>
-                                    <a href="https://hackfsu.com">Home</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:hackfsu.team@gmail.com">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </aside>
+                        <Menu label="HackFSU">
+                            <a href="https://hackfsu.com">Home</a>
+                            <a href="mailto:hackfsu.team@gmail.com">Contact</a>
+                        </Menu>
+                    </div>
+                    <div className="column is-3">
+                        <Menu label="Media">
+                            <a href={links.facebookHackFSU}>Facebook</a>
+                            <a href={links.facebookEvent}>Event</a>
+                            <a href={links.github}>Github</a>
+                        </Menu>
                     </div>
                 </div>
                 <div className="footnote has-text-centered">
-                    <a href="mailto:team@makebuild.dev">team@makebuild.dev</a> —
-                    Copyright © 2019. All rights reserved.
+                    <a href={links.mailTeam}>team@makebuild.dev</a> — Copyright
+                    © 2019. All rights reserved.
                 </div>
             </div>
         </footer>

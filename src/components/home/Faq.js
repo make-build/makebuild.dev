@@ -1,4 +1,5 @@
 import React from 'react';
+import links from '../links';
 
 const FAQ = () => {
     return (
@@ -20,7 +21,7 @@ const FAQ = () => {
                 </p>
                 <h2>SOUNDS COOL! HOW MUCH DOES ADMISSION COST?</h2>
                 <p>
-                    Nothing! Thanks to our industry sponsors,
+                    Nothing! Thanks to our industry sponsors,&nbsp;
                     <span className="brand">MAKE/BUILD</span> is completely
                     free.
                 </p>
@@ -63,9 +64,8 @@ const FAQ = () => {
 
                 <h2>Other Questions?</h2>
                 <p>
-                    Feel free to{' '}
-                    <a href="mailto:team@makebuild.dev">email us</a> or message
-                    us on
+                    Feel free to <a href={links.mailTeam}>email us</a> or
+                    message us on
                     <a href="#">our event page.</a>
                 </p>
             </div>

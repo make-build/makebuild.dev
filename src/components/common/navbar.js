@@ -1,20 +1,26 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const navLinks = [
-    ['MAKE/BUILD', '#'],
-    ['Details', '#details'],
-    ['Schedule', '#schedule'],
-    ['Sponsors', '#sponsors'],
-    ['FAQ', '#faq'],
+    ['MAKE/BUILD', '/'],
+    ['Details', '/#details'],
+    ['Schedule', '/#schedule'],
+    ['Sponsors', '/#sponsors'],
+    ['FAQ', '/#faq'],
 ];
 
 const NavBar = () => (
     <nav className="container brand">
         <div className="columns is-mobile is-multiline">
             {navLinks.map(([name, href]) => (
-                <a key={name} className="column has-text-centered" href={href}>
+                <Link
+                    key={name}
+                    className="column has-text-centered"
+                    href={href}
+                    to={href}
+                >
                     <h4>{name}</h4>
-                </a>
+                </Link>
             ))}
         </div>
     </nav>
