@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "website",
+  "alias": ["makebuild.dev"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
+}
