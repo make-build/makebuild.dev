@@ -2,7 +2,7 @@
 > Website for Spring 2019 hackathon at FSU
 
 ### :rocket: Getting Started
-We use [Parcel](https://parceljs.org) to bundle the website. It doesn't use React, but this lets us seamlessly import SCSS stylesheets, and use `posthtml` to have `<include>` tags.
+We use [Parcel](https://parceljs.org) to bundle the website. We use React Stateless Components as a way to keep the code DRY. SCSS is imported in the HTML, handled by Parcel.
 
 
 ```sh
