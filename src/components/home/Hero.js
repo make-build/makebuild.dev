@@ -1,6 +1,7 @@
 import React from 'react';
 import planetEarth from '../../assets/svg/006-planet-earth.svg';
 import links from '../links';
+import dates from '../dates';
 
 const Hero = () => {
     return (
@@ -17,7 +18,7 @@ const Hero = () => {
                     <h3>
                         A Hackathon Event
                         <br />
-                        April 12th 2019
+                        {dates.eventDate}
                     </h3>
                     <div className="buttons is-centered">
                         <a className="button" href={links.registration}>

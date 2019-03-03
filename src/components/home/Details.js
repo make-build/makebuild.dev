@@ -1,5 +1,6 @@
 import React from 'react';
 import moonRover from '../../assets/svg/016-lunar-roving-vehicle.svg';
+import dates from '../dates';
 
 const Details = () => {
     return (
@@ -21,7 +22,7 @@ const Details = () => {
                             project happen.
                         </p>
                         <h4>Date</h4>
-                        <p>TBD.</p>
+                        <p>{dates.eventDate}.</p>
                         <h4>Location</h4>
                         <p>TBD.</p>
                     </div>
