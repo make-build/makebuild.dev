@@ -1,16 +1,11 @@
 import React from 'react';
-import spaceShuttle from '../../assets/svg/025-spaceship.svg';
+import desktop from '../../assets/desktop.png';
 
 const Schedule = () => {
     return (
         <section id="schedule" className="section">
             <div className="content container">
                 <div className="columns is-mobile is-vcentered is-multiline is-centered">
-                    <div className="column">
-                        <div className="img-wrap has-text-centered">
-                            <img src={spaceShuttle} alt="Explore" />
-                        </div>
-                    </div>
                     <div className="column content is-narrow-mobile is-6-desktop">
                         <h1>Schedule</h1>
                         <p>Coming soon!</p>
@@ -37,6 +32,11 @@ const Schedule = () => {
                     <b>12:00am </b>
                     Hacking Ends
                 </span> */}
+                    </div>
+                    <div className="column">
+                        <div className="img-wrap has-text-centered">
+                            <img src={desktop} alt="Explore" />
+                        </div>
                     </div>
                 </div>
             </div>
