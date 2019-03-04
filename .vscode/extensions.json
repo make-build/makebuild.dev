@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "christian-kohler.npm-intellisense",
+    "eg2.vscode-npm-script",
+    "robinbentley.sass-indented",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "xabikos.reactsnippets",
+    "xabikos.javascriptsnippets"
+  ]
+}
