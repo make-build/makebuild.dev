@@ -19,6 +19,6 @@ Deploy with [`now`](https://zeit.co/now).
 
 
 ### :hammer: Contributing
-Be sure to ESLint and Prettier. Format your code, or the maintainers will come after you.
+VSCode is the official IDE for this project. Install the extensions listed in `.vscode/extensions.json`, this will enable automatic linting and formatting.
 
 `// TODO: setup autoformatting on precommit`.
