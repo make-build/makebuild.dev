@@ -11,7 +11,7 @@ nav {
     padding: 1rem 0 0 0;
 
     a h4 {
-        color: $greydark;
+        color: $grey-dark;
         padding: 1rem;
     }
 }
@@ -30,7 +30,7 @@ img {
     letter-spacing: 1.1px;
     text-transform: uppercase;
     font-weight: 700;
-    border-radius: 2px;
+    border-radius: 0;
 }
 
 .content {
@@ -38,6 +38,7 @@ img {
     h2,
     h3 {
         font-family: $family-monospace;
+        text-transform: uppercase;
     }
 
     h4 {
@@ -50,6 +51,36 @@ img {
     padding-bottom: 6rem;
 }
 
+.columns {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .columns {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+        margin-top: -0.75rem;
+    }
+}
+
+// Background stylings
+body {
+    position: relative;
+}
+body::after {
+    content: '';
+    background-image: url('../assets/background.png');
+    background-size: contain;
+    background-repeat: repeat;
+    top: 0;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+// Section layout stylings
 #hero {
     position: relative;
     h1 {
@@ -65,7 +96,7 @@ img {
     h2 {
         font-size: $size-5;
         font-weight: $weight-bold;
-        color: $greydark;
+        color: $grey-dark;
 
         @include tablet {
             font-size: $size-4;
@@ -76,20 +107,26 @@ img {
         margin-bottom: 2rem;
     }
     .logo {
-        width: 20%;
-        padding: 2rem;
+        width: 100%;
+        padding: 2rem 0;
     }
 
     .buttons {
         margin-top: 1rem;
         .button {
             @extend .is-primary, .is-medium;
-            border-radius: 2px;
             padding: 1.25rem;
             margin: 0 1rem 1rem;
             font-size: 1rem;
             min-width: 8rem;
         }
+    }
+}
+
+#details {
+    background-color: $grey-dark;
+    .content * {
+        color: findColorInvert($grey-dark);
     }
 }
 
@@ -105,18 +142,29 @@ img {
 }
 
 #statement {
-    background-color: $black;
-    background-image: url('../assets/statement-background.svg');
+    background-color: $white;
+    background-image: url('../assets/grid.png');
     background-attachment: fixed;
+    background-size: 125%;
+    border-bottom: $blue 1rem solid;
 
     .box {
         border-radius: 0;
-        background-color: $body-background-color;
+        background-color: $blue;
 
         h1 {
             font-weight: $weight-normal;
+            text-transform: unset;
+            color: findColorInvert($blue);
         }
     }
+
+    // .box::after {
+    //     width: 100%;
+    //     height: 100%;
+    //     content: '';
+    //     opacity: 0.9;
+    // }
 
     @include tablet {
         padding: 8rem 4rem;
@@ -127,6 +175,7 @@ img {
 }
 
 #schedule {
+    background: $background;
     span {
         b {
             font-family: $family-monospace;
@@ -135,29 +184,33 @@ img {
 }
 
 #sponsors.section {
+    background: $grey-dark;
+    * {
+        color: findColorInvert($grey-dark);
+    }
     h1 {
         margin-bottom: 2rem;
     }
     .column .box {
-        background-color: $shuttle-white-off;
+        background: darken($grey-dark, 5%);
+        // background-color: $grey-light;
         border-radius: 2px;
         box-shadow: none;
-        border: $black 0.5rem solid;
+        // border: findColorInvert($grey-dark) 0.5rem solid;
         min-height: 4rem;
         height: 100%;
     }
 
     h3 {
-        color: $black;
         margin: 0;
     }
 }
 
 #faq.section {
-    background-color: $earth-blue;
-    $faq-text-color: $black;
+    // background-color: $blue;
+    $faq-text-color: findColorInvert($background);
 
-    * {
+    .content * {
         color: $faq-text-color;
     }
 
@@ -182,14 +235,8 @@ img {
 }
 
 .footer {
-    // background-color: $black-ter;
     .menu .menu-label {
         color: $text-invert;
-    }
-
-    .logo {
-        width: 128px;
-        min-width: unset;
     }
 
     .button {

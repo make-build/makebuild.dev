@@ -1,6 +1,6 @@
 import React from 'react';
-import moonRover from '../../assets/svg/016-lunar-roving-vehicle.svg';
 import dates from '../dates';
+import blueprint from '../../assets/blueprint.png';
 
 const Details = () => {
     return (
@@ -9,7 +9,7 @@ const Details = () => {
                 <div className="columns is-vcentered">
                     <div className="column is-6">
                         <div className="img-wrap has-text-centered">
-                            <img src={moonRover} alt="Explore" />
+                            <img src={blueprint} alt="Explore" />
                         </div>
                     </div>
                     <div className="column is-6 content">
@@ -22,7 +22,9 @@ const Details = () => {
                             project happen.
                         </p>
                         <h4>Date</h4>
-                        <p>{dates.eventDate}.</p>
+                        <p>
+                            {dates.eventDate}, {dates.eventTime}.
+                        </p>
                         <h4>Location</h4>
                         <p>TBD.</p>
                     </div>

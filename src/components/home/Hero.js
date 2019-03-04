@@ -1,5 +1,5 @@
 import React from 'react';
-import planetEarth from '../../assets/svg/006-planet-earth.svg';
+import logo1 from '../../assets/logo-1.png';
 import links from '../links';
 import dates from '../dates';
 
@@ -8,18 +8,14 @@ const Hero = () => {
         <section id="hero" className="hero section">
             <div className="hero-body">
                 <div className="container has-text-centered content">
-                    <img
-                        className="logo"
-                        src={planetEarth}
-                        alt="make/build logo"
-                    />
-                    <h2>HackFSU presents:</h2>
+                    <img className="logo" src={logo1} alt="make/build logo" />
+                    {/* <h2>HackFSU presents:</h2>
                     <h1>MAKE/BUILD</h1>
                     <h3>
                         A Hackathon Event
                         <br />
                         {dates.eventDate}
-                    </h3>
+                    </h3> */}
                     <div className="buttons is-centered">
                         <a className="button" href={links.registration}>
                             Apply
