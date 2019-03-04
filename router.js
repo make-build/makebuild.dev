@@ -6,7 +6,7 @@
 require('dotenv').config();
 
 const { router, get } = require('microrouter'); // routing
-const config = ['/api/schedule'];
+const config = ['/api/schedule', '/api/team'];
 
 // Load the routes from now.json into microrouter `get` routes
 const routes = config.map(r => get(r, require(`.${r}.js`)));
