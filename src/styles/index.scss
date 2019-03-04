@@ -11,7 +11,7 @@ nav {
     padding: 1rem 0 0 0;
 
     a h4 {
-        color: $greydark;
+        color: $grey-dark;
         padding: 1rem;
     }
 }
@@ -65,7 +65,7 @@ img {
     h2 {
         font-size: $size-5;
         font-weight: $weight-bold;
-        color: $greydark;
+        color: $grey-dark;
 
         @include tablet {
             font-size: $size-4;
@@ -139,7 +139,7 @@ img {
         margin-bottom: 2rem;
     }
     .column .box {
-        background-color: $shuttle-white-off;
+        background-color: $grey-light;
         border-radius: 2px;
         box-shadow: none;
         border: $black 0.5rem solid;
@@ -154,7 +154,7 @@ img {
 }
 
 #faq.section {
-    background-color: $earth-blue;
+    background-color: $blue;
     $faq-text-color: $black;
 
     * {
