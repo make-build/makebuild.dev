@@ -12,6 +12,7 @@ module.exports = {
         es6: true,
     },
     rules: {
+        'no-console': 'off',
         'prettier/prettier': 'error',
         'react/prop-types': 'off',
     },
