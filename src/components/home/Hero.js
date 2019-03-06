@@ -1,7 +1,6 @@
 import React from 'react';
 import logo1 from '../../assets/logo-1.png';
-import links from '../links';
-import dates from '../dates';
+import { links } from '../../lib';
 
 const Hero = () => {
     return (

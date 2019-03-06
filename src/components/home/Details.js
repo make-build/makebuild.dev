@@ -1,5 +1,5 @@
 import React from 'react';
-import dates from '../dates';
+import { dates } from '../../lib';
 import blueprint from '../../assets/blueprint.png';
 
 const Details = () => {

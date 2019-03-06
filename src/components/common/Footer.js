@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import links from '../links';
+import { links } from '../../lib';
 
 const HomeLink = () => <NavLink to="/">Home</NavLink>;
 const HomeAnchor = () => <a href="/#">Home</a>;
@@ -30,7 +30,8 @@ const Footer = () => {
                                 <Route component={HomeLink} />
                             </Switch>
                             <a href={links.registration}>Apply</a>
-                            <NavLink to="/team">Team</NavLink>
+                            {/* <NavLink to="/team">Team</NavLink> */}
+                            <a href={links.coc}>Code of Conduct</a>
                         </Menu>
                     </div>
                     <div className="column is-3">

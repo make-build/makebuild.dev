@@ -1,5 +1,5 @@
 import React from 'react';
-import links from '../links';
+import { links } from '../../lib';
 
 const FAQ = () => {
     return (
@@ -65,8 +65,8 @@ const FAQ = () => {
                 <h2>Other Questions?</h2>
                 <p>
                     Feel free to <a href={links.mailTeam}>email us</a> or
-                    message us on
-                    <a href="#">our event page.</a>
+                    message us on{' '}
+                    <a href={links.facebookEvent}>our event page.</a>
                 </p>
             </div>
         </section>
