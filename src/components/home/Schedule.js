@@ -21,13 +21,13 @@ class Schedule extends Component {
             <section id="schedule" className="section">
                 <div className="content container">
                     <div className="columns is-mobile is-vcentered is-multiline is-centered">
-                        <div className="column content is-narrow-mobile is-6-desktop">
+                        <div className="column content">
                             <h1>Schedule</h1>
                             <p>
                                 More events coming soon, schedule subject to
                                 change.
                             </p>
-                            <table>
+                            <table className="table">
                                 <tbody>
                                     {this.state.schedule.map(event => (
                                         <tr key={event.Activity}>

@@ -121,6 +121,10 @@ body::after {
             min-width: 8rem;
         }
     }
+
+    @include mobile {
+        padding-top: 0;
+    }
 }
 
 #details {
