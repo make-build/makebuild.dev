@@ -1,7 +1,8 @@
 const { send } = require('micro');
+const cors = require('micro-cors')();
 const { readTable } = require('./lib/airtable');
 
-module.exports = async (req, res) => {
+const handler = async (req, res) => {
     const items = await readTable('Schedule', [
         'Activity',
         'Date & Time',
@@ -19,3 +20,5 @@ module.exports = async (req, res) => {
         ),
     );
 };
+
+module.exports = cors(handler);
