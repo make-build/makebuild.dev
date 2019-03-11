@@ -25,29 +25,26 @@ const Footer = () => {
                 <div className="columns">
                     <div className="column is-3">
                         <Menu label="MAKE/BUILD">
-                            <Switch>
-                                <Route exact path="/" component={HomeAnchor} />
-                                <Route component={HomeLink} />
-                            </Switch>
                             <a href={links.registration}>Apply</a>
+                            <a href={links.facebookEvent}>Event</a>
                             <a href={links.mailTeam}>Contact</a>
-                            {/* <NavLink to="/team">Team</NavLink> */}
                             <a href={links.coc}>Code of Conduct</a>
                         </Menu>
                     </div>
                     <div className="column is-3">
                         <Menu label="HackFSU">
-                            <a href="https://hackfsu.com">Home</a>
-                            <a href="mailto:hackfsu.team@gmail.com">Contact</a>
+                            <a href={links.webHackFSU}>Home</a>
+                            <a href={links.emailHackFSU}>Email</a>
+                            <a href={links.facebookHackFSU}>Facebook</a>
+                            <a href={links.twitterHackFSU}>Twitter</a>
                         </Menu>
                     </div>
-                    <div className="column is-3">
+                    {/* <div className="column is-3">
                         <Menu label="Media">
-                            <a href={links.facebookHackFSU}>Facebook</a>
-                            {/* <a href={links.facebookEvent}>Event</a> */}
+                            <a href={links.facebookEvent}>Facebook</a>
                             <a href={links.github}>Github</a>
                         </Menu>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="footnote has-text-centered">
                     <a href={links.mailTeam}>team@makebuild.dev</a> — Copyright

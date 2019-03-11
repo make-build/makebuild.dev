@@ -1,5 +1,5 @@
 import React from 'react';
-import { dates } from '../../lib';
+import { dates, links } from '../../lib';
 import blueprint from '../../assets/blueprint.png';
 
 const Details = () => {
@@ -15,7 +15,7 @@ const Details = () => {
                     <div className="column is-6 content">
                         <h1>Details</h1>
                         <p>
-                            Build awesome stuff. Learn something new. Unlease
+                            Build awesome stuff. Learn something new. Unleash
                             your creativity without spending your entire
                             weekend. This spring, join us for a 12-hour
                             hackathon here in Tallahassee to make your next big
@@ -26,7 +26,11 @@ const Details = () => {
                             {dates.eventDate}, {dates.eventTime}.
                         </p>
                         <h4>Location</h4>
-                        <p>TBD.</p>
+                        <p>
+                            <a href={links.ihub}>
+                                The Innovation Hub, Florida State University.
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
