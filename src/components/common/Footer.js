@@ -43,7 +43,7 @@ const Footer = () => {
                     <div className="column is-3">
                         <Menu label="Media">
                             <a href={links.facebookHackFSU}>Facebook</a>
-                            <a href={links.facebookEvent}>Event</a>
+                            {/* <a href={links.facebookEvent}>Event</a> */}
                             <a href={links.github}>Github</a>
                         </Menu>
                     </div>

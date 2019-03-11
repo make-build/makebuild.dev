@@ -199,6 +199,14 @@ body::after {
         // border: findColorInvert($grey-dark) 0.5rem solid;
         min-height: 4rem;
         height: 100%;
+
+        display: flex;
+        max-height: 200px;
+
+        img,
+        p {
+            margin: auto;
+        }
     }
 
     h3 {
