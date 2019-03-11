@@ -30,6 +30,7 @@ const Footer = () => {
                                 <Route component={HomeLink} />
                             </Switch>
                             <a href={links.registration}>Apply</a>
+                            <a href={links.mailTeam}>Contact</a>
                             {/* <NavLink to="/team">Team</NavLink> */}
                             <a href={links.coc}>Code of Conduct</a>
                         </Menu>
