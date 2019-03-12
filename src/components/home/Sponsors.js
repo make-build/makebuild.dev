@@ -1,6 +1,7 @@
 import React from 'react';
 
 import github from '../../assets/sponsors/github.png';
+import domi from '../../assets/sponsors/Domi-Station-Logo.png';
 
 const Sponsors = () => {
     return (
@@ -13,7 +14,7 @@ const Sponsors = () => {
 
                     <div className="column is-6">
                         <div
-                            className="box github"
+                            className="box"
                             style={{
                                 backgroundColor: 'white',
                                 paddingRight: '1.75rem',
@@ -23,8 +24,18 @@ const Sponsors = () => {
                         </div>
                     </div>
                     <div className="column is-6">
-                        <div className="box">
-                            <p className="brand">More coming soon!</p>
+                        <div
+                            className="box"
+                            style={{
+                                backgroundColor: 'white',
+                            }}
+                        >
+                            <img
+                                src={domi}
+                                style={{
+                                    padding: '2.5rem',
+                                }}
+                            />
                         </div>
                     </div>
                     <div className="column is-4">
